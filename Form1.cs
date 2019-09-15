@@ -36,8 +36,6 @@ namespace NRDConverter
 
             while (reader.Read())
             {
-                int c = 20 - reader[5].ToString().Length;
-                string s = new string(' ', c>0 ? c : 20);
                 MI tmp = new MI();
                 tmp.Name = reader[5].ToString();
                 tmp.TickSize = Convert.ToDouble(reader[8]);
